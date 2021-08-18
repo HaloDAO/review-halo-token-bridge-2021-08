@@ -1,0 +1,11 @@
+{
+    "project_name": "Project name",
+    "client_name": "Client name",
+    "review_period": "2 weeks",
+    "date_interval": "October 15 to November 15, 2020",
+    "person_days": "5",
+    "template": "./Readme.md.mustache",
+    "date": "August 2021",
+    "commit_hash": "7fab901ff5aa136972ce2533f39f8d912e5e363c",
+    "source_repository": "git@github.com:HaloDAO/token-bridge.git"
+}
