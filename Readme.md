@@ -1,3 +1,48 @@
+<div id="splash">
+    <div id="project">
+          <span class="splash-title">
+               Project
+          </span>
+          <br />
+          <span id="project-value">
+               HALO Token Bridge
+          </span>
+    </div>
+     <div id="details">
+          <div id="left">
+               <span class="splash-title">
+                    Client
+               </span>
+               <br />
+               <span class="details-value">
+                    HaloDAO
+               </span>
+               <br />
+               <span class="splash-title">
+                    Date
+               </span>
+               <br />
+               <span class="details-value">
+                    August 2021
+               </span>
+          </div>
+          <div id="right">
+               <span class="splash-title">
+                    Reviewers
+               </span>
+               <br />
+               <span class="details-value">
+                    Daniel Luca
+               </span><br />
+               <span class="contact">@cleanunicorn</span>
+               <br />
+               <span class="details-value">
+                    Andrei Simion
+               </span><br />
+               <span class="contact">@andreiashu</span>
+          </div>
+    </div>
+</div>
 
 
 ## Table of Contents
@@ -18,11 +63,11 @@
 
 ## Details
 
-- **Client** Client name
+- **Client** HaloDAO
 - **Date** August 2021
 - **Lead reviewer** Daniel Luca ([@cleanunicorn](https://twitter.com/cleanunicorn))
 - **Reviewers** Daniel Luca ([@cleanunicorn](https://twitter.com/cleanunicorn)), Andrei Simion ([@andreiashu](https://twitter.com/andreiashu))
-- **Repository**: [Project name](git@github.com:HaloDAO/token-bridge.git)
+- **Repository**: [HALO Token Bridge](git@github.com:HaloDAO/token-bridge.git)
 - **Commit hash** `7fab901ff5aa136972ce2533f39f8d912e5e363c`
 - **Technologies**
   - Solidity
@@ -39,9 +84,9 @@
 
 ## Executive summary
 
-This report represents the results of the engagement with **Client name** to review **Project name**.
+This report represents the results of the engagement with **HaloDAO** to review **HALO Token Bridge**.
 
-The review was conducted over the course of **2 weeks** from **October 15 to November 15, 2020**. A total of **5 person-days** were spent reviewing the code.
+The review was conducted over the course of **2 weeks** from **16th of August to 27th of August, 2021**. A total of **20 person-days** were spent reviewing the code.
 
 ### Week 1
 
@@ -53,15 +98,19 @@ The second week was ...
 
 ## Scope
 
-The initial review focused on the [Project name](git@github.com:HaloDAO/token-bridge.git) repository, identified by the commit hash `7fab901ff5aa136972ce2533f39f8d912e5e363c`. ...
+The initial review focused on the [HALO Token Bridge](git@github.com:HaloDAO/token-bridge.git) repository, identified by the commit hash `7fab901ff5aa136972ce2533f39f8d912e5e363c`. ...
 
 <!-- We focused on manually reviewing the codebase, searching for security issues such as, but not limited to, re-entrancy problems, transaction ordering, block timestamp dependency, exception handling, call stack depth limitation, integer overflow/underflow, self-destructible contracts, unsecured balance, use of origin, costly gas patterns, architectural problems, code readability. -->
 
 **Includes:**
-- GoodContract.sol
 
-**Excludes:**
-- BadContract.sol
+ - code/contracts/MockToken.sol
+ - code/contracts/SecondaryBridge.sol
+ - code/contracts/IBurnable.sol
+ - code/contracts/Migrations.sol
+ - code/contracts/BaseBridge.sol
+ - code/contracts/IMintable.sol
+ - code/contracts/PrimaryBridge.sol
 
 ## Recommendations
 
@@ -271,4 +320,14 @@ $ npx buidler test
 
 This report falls under the terms described in the included [LICENSE](./LICENSE).
 
+<!-- Load highlight.js -->
+<link rel="stylesheet"
+href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/highlightjs-solidity@1.0.20/solidity.min.js"></script>
+<script type="text/javascript">
+    hljs.registerLanguage('solidity', window.hljsDefineSolidity);
+    hljs.initHighlightingOnLoad();
+</script>
 <link rel="stylesheet" href="./style/print.css"/>

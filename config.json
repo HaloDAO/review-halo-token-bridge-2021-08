@@ -1,11 +1,12 @@
 {
-  "project_name": "HALO Token Bridge",
-  "client_name": "HaloDAO",
-  "review_period": "2 weeks",
-  "date_interval": "16th of August to 27th of August, 2021",
-  "person_days": "20",
-  "template": "./Readme.md.mustache",
-  "date": "August 2021",
-  "commit_hash": "7fab901ff5aa136972ce2533f39f8d912e5e363c",
-  "source_repository": "git@github.com:HaloDAO/token-bridge.git"
+    "client_name": "HaloDAO",
+    "commit_hash": "7fab901ff5aa136972ce2533f39f8d912e5e363c",
+    "date": "August 2021",
+    "date_interval": "16th of August to 27th of August, 2021",
+    "issues": [],
+    "person_days": "20",
+    "project_name": "HALO Token Bridge",
+    "review_period": "2 weeks",
+    "source_repository": "git@github.com:HaloDAO/token-bridge.git",
+    "template": "./Readme.md.mustache"
 }
