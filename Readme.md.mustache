@@ -43,10 +43,14 @@ The initial review focused on the [{{project_name}}]({{source_repository}}) repo
 <!-- We focused on manually reviewing the codebase, searching for security issues such as, but not limited to, re-entrancy problems, transaction ordering, block timestamp dependency, exception handling, call stack depth limitation, integer overflow/underflow, self-destructible contracts, unsecured balance, use of origin, costly gas patterns, architectural problems, code readability. -->
 
 **Includes:**
-- GoodContract.sol
 
-**Excludes:**
-- BadContract.sol
+ - code/contracts/MockToken.sol
+ - code/contracts/SecondaryBridge.sol
+ - code/contracts/IBurnable.sol
+ - code/contracts/Migrations.sol
+ - code/contracts/BaseBridge.sol
+ - code/contracts/IMintable.sol
+ - code/contracts/PrimaryBridge.sol
 
 ## Recommendations
 
