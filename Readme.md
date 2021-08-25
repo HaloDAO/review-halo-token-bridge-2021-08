@@ -32,14 +32,14 @@
                </span>
                <br />
                <span class="details-value">
-                    Daniel Luca
-               </span><br />
-               <span class="contact">@cleanunicorn</span>
-               <br />
-               <span class="details-value">
                     Andrei Simion
                </span><br />
                <span class="contact">@andreiashu</span>
+               <br />
+               <span class="details-value">
+                    Daniel Luca
+               </span><br />
+               <span class="contact">@cleanunicorn</span>
           </div>
     </div>
 </div>
@@ -69,13 +69,13 @@
 
 - **Client** HaloDAO
 - **Date** August 2021
-- **Lead reviewer** Daniel Luca ([@cleanunicorn](https://twitter.com/cleanunicorn))
+- **Lead reviewer** Andrei Simion ([@andreiashu](https://twitter.com/andreiashu))
 - **Reviewers** Daniel Luca ([@cleanunicorn](https://twitter.com/cleanunicorn)), Andrei Simion ([@andreiashu](https://twitter.com/andreiashu))
 - **Repository**: [HALO Token Bridge](git@github.com:HaloDAO/token-bridge.git)
 - **Commit hash** `7fab901ff5aa136972ce2533f39f8d912e5e363c`
 - **Technologies**
   - Solidity
-  - Node.JS
+  - TypeScript
 
 ## Issues Summary
 
@@ -90,13 +90,15 @@
 
 This report represents the results of the engagement with **HaloDAO** to review **HALO Token Bridge**.
 
-The review is part of a wider one, which includes several other components from the HaloDAO ecosystem: (Halo Rewards, Halo AMM, Halo Bridge, Halo Bridge Handler). It was conducted over the course of **2 weeks** from **16th of August to 27th of August, 2021**. A total of **20 person-days** were spent reviewing the code.
+The review is part of a broader engagement with HaloDAO that includes several other components from the HaloDAO ecosystem (Halo Rewards, Halo AMM, Halo Bridge, Halo Bridge Handler).
+
+The full review (across above-mentioned repositories) was conducted over the course of **2 weeks** from **16th of August to 27th of August, 2021**. We spent a total of **20 person-days** reviewing the code.
 
 ## Scope
 
-The initial review focused on the [HALO Token Bridge](git@github.com:HaloDAO/token-bridge.git) repository, identified by the commit hash `7fab901ff5aa136972ce2533f39f8d912e5e363c`. ...
+The initial review focused on the [HALO Token Bridge](git@github.com:HaloDAO/token-bridge.git) repository, identified by the commit hash `7fab901ff5aa136972ce2533f39f8d912e5e363c`.
 
-<!-- We focused on manually reviewing the codebase, searching for security issues such as, but not limited to, re-entrancy problems, transaction ordering, block timestamp dependency, exception handling, call stack depth limitation, integer overflow/underflow, self-destructible contracts, unsecured balance, use of origin, costly gas patterns, architectural problems, code readability. -->
+We focused on manually reviewing the codebase, searching for security issues such as, but not limited to, re-entrancy problems, transaction ordering, block timestamp dependency, exception handling, call stack depth limitation, integer overflow/underflow, self-destructible contracts, unsecured balance, use of origin, costly gas patterns, architectural problems, code readability.
 
 **Includes:**
 
@@ -110,7 +112,7 @@ We identified a few possible general improvements that are not security issues d
 
 ### Increase the number of tests
 
-A good rule of thumb is to have 100% test coverage. This does not guarantee the lack of security problems, but it means that the desired functionality behaves as intended. The negative tests also bring a lot of value because not allowing some actions to happen is also part of the desired behavior.
+A good rule of thumb is to have 100% test coverage. This does not guarantee a lack of security problems, but it means that the desired functionality behaves as intended. The negative tests also bring value because not allowing some actions to happen is also part of the desired behavior.
 
 
 ## Issues
@@ -289,7 +291,7 @@ Consider adding a unique tracking mechanism similar to the `nonce` example above
 
 ### Surya
 
-Sūrya is a utility tool for smart contract systems. It provides a number of visual outputs and information about the structure of smart contracts. It also supports querying the function call graph in multiple ways to aid in the manual inspection and control flow analysis of contracts.
+Sūrya is a utility tool for smart contract systems. It provides several visual outputs and information about the structure of smart contracts. It also supports querying the function call graph in multiple ways to aid in the manual inspection and control flow analysis of contracts.
 
 **Contracts Description Table**
 
