@@ -293,10 +293,6 @@ Consider adding a unique tracking mechanism similar to the `nonce` example above
 
 Sūrya is a utility tool for smart contract systems. It provides several visual outputs and information about the structure of smart contracts. It also supports querying the function call graph in multiple ways to aid in the manual inspection and control flow analysis of contracts.
 
-**Contracts Description Table**
-
-```text
-surya mdreport report.md code/contracts/*.sol
 
 ## Sūrya's Description Report
 
@@ -353,7 +349,6 @@ surya mdreport report.md code/contracts/*.sol
 |:--------:|-----------|
 |    🛑    | Function can modify state |
 |    💵    | Function is payable |
-```
 
 
 #### Graphs
