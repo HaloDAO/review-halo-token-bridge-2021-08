@@ -81,7 +81,7 @@
 
 | SEVERITY       |    OPEN    |    CLOSED    |
 |----------------|:----------:|:------------:|
-|  Informational  |  1  |  0  |
+|  Informational  |  0  |  1  |
 |  Minor  |  0  |  0  |
 |  Medium  |  0  |  0  |
 |  Major  |  0  |  0  |
@@ -119,7 +119,7 @@ A good rule of thumb is to have 100% test coverage. This does not guarantee a la
 
 
 ### [Consider adding a nonce to track each deposit / burn operation](https://github.com/monoceros-alpha/review-halo-token-bridge-2021-08/issues/1)
-![Issue status: Open](https://img.shields.io/static/v1?label=Status&message=Open&color=5856D6&style=flat-square) ![Informational](https://img.shields.io/static/v1?label=Severity&message=Informational&color=34C759&style=flat-square)
+![Issue status: Fixed](https://img.shields.io/static/v1?label=Status&message=Fixed&color=5AC8FA&style=flat-square) ![Informational](https://img.shields.io/static/v1?label=Severity&message=Informational&color=34C759&style=flat-square)
 
 **Description**
 
