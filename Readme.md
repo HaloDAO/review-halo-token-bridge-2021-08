@@ -149,7 +149,7 @@ In this case, their tokens are locked in the bridge, some accounting is done, an
 
 If the same user calls the `deposit` method twice, with the same value, in the same block, 2 identical events will be emitted by the contract.
 
-Each event will have the same. 
+Each event will have the same:
 
 - `amount`
 - `chainId`
